@@ -8,7 +8,7 @@ $StartTime = Get-Date
 $wanip = invoke-webrequest -Uri icanhazip.com -UseBasicParsing
 
 #Geekflare API
-$apikey = "181fb9e7-1ed4-4ab0-b45c-ff8f3be2b271"
+$apikey = "geekflareapikey"
 $urlscan = $wanip.content
 $Body = @{"url" = $urlscan}
 $Header = @{"x-api-key" = $apikey}
