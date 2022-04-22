@@ -5,7 +5,7 @@ Start-Sleep $Random
 $StartTime = Get-Date
 [Net.ServicePointManager]::SecurityProtocol = "Tls12"
 #Endpoint WAN ip
-$wanip = invoke-webrequest -Uri icanhazip.com -UseBasicParsing
+$wanip = invoke-webrequest -Uri ipv4.icanhazip.com -UseBasicParsing
 
 #Geekflare API
 $apikey = "geekflareapikey"
